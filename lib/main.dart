@@ -67,7 +67,7 @@ class MyHomePage extends StatelessWidget {
           smoothCameraEnabled: true,
           zoom: 1.5,
         ),
-        showCollisionArea: false,
+        showCollisionArea: true,
       ),
     );
   }

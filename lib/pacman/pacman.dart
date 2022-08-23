@@ -22,7 +22,7 @@ class PacMan extends SimplePlayer with ObjectCollision {
     setupCollision(
       CollisionConfig(
         collisions: [
-          CollisionArea.rectangle(size: Vector2(9, 9),align: Vector2(1, 1))
+          CollisionArea.circle(radius: 5)
         ],
       ),
     );
@@ -51,7 +51,6 @@ class PacMan extends SimplePlayer with ObjectCollision {
     if (life != 0) {
       super.joystickChangeDirectional(event);
     }else{}
-
   }
 }
 

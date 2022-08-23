@@ -1,42 +1,29 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:pacman/sprite_sheet/dot.dart';
 
-class Dot extends SimpleEnemy with ObjectCollision {
-
+class Dot extends GameDecoration with Sensor {
   static int deathScore = 0;
 
   Dot(Vector2 position, Vector2 size)
-      : super(
-          position: position,
-          size: size,
-          animation: SimpleDirectionAnimation(
-            idleRight: DotSpriteSheet.dotIdleRight,
-            runRight: DotSpriteSheet.dotRunRight,
-          ),
-        ) {
-    setupCollision(
-      CollisionConfig(
-        collisions: [
-          CollisionArea.rectangle(size: Vector2(4, 4), align:Vector2(6, 6))
-        ],
-      ),
+      : super.withSprite(
+    sprite: Sprite.load('dot.png'),
+    position: position,
+    size: size,
+  )
+  {
+    // call this method to configure sensor area.
+    setupSensorArea(
+        areaSensor: [
+          CollisionArea.circle(radius: 4, align: Vector2(4, 4))
+        ]
     );
   }
 
   @override
-  bool onCollision(GameComponent component, bool active) {
-    if(component is Enemy){
-      return false;
+  void onContact(GameComponent component) {
+    if(component is Player){
+      removeFromParent();
+      deathScore = deathScore + 10 ;
     }
-
-    return super.onCollision(component, active);
-  }
-
-  @override
-  void die() {
-    removeFromParent();
-    deathScore = deathScore + 10;
-    super.die();
   }
 
 }
