@@ -1,0 +1,14 @@
+{ "columns":28,
+ "image":"PacManSprites.png",
+ "imageheight":248,
+ "imagewidth":453,
+ "margin":0,
+ "name":"PacManSprites",
+ "spacing":0,
+ "tilecount":420,
+ "tiledversion":"1.9.1",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.8"
+}
