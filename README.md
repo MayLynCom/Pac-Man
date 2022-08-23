@@ -1,21 +1,21 @@
 # Pac-Man Usando Flutter Bonfire
 
-##Como testar?
+<h2>Como testar?</h2>
 
-1 - Baixar o repositório
-2 - extrai-lo 
-3 - abrir a pasta dentro de uma IDE de preferência com Emulador(cel), porem da pra testar no navegador
-4 - executar o Pub Get
-5 - rodar a aplicação no Emulador ou Navegador
+- Baixar o repositório
+- Extraí-lo 
+- Abrir a pasta dentro de uma IDE de preferência com Emulador(cel), porém da pra testar no navegador
+- Executar o Pub Get
+- Rodar a aplicação no Emulador ou Navegador
 
-##Funcões:
+<h2>Funcões:</h2>
 
 - Movimentação aleátoria dos fantasmas
-- Perseguição dos ghost em uma determinada distancia
+- Perseguição dos fantasmas em uma determinada distância
 - Controle do Pac-Man com o JoyStick
 - Soma dos pontos comendo as bolinhas
 
 
-##Funções  que não foram incrementadas:
+<h2>Funções  que não foram incrementadas:</h2>
 
 - Frutas para derrotar os fantasmas.
