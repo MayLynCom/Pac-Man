@@ -15,6 +15,8 @@
 - Controle do Pac-Man com o JoyStick
 - Soma dos pontos comendo as bolinhas
 
+![PacmanGif](https://user-images.githubusercontent.com/108353385/186041587-3ca02f72-c300-4323-941d-a696a2fe64c4.gif)
+
 
 <h2>Funções  que não foram incrementadas:</h2>
 
